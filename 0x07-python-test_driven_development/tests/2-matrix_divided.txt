@@ -1,8 +1,7 @@
 ==================================
 Test case for 2-matrix_divided.py
 =====================================
-""" This is a documentation for the function defined in the python file ``matrix_divided(matrix, div)``
-"""
+""" This is a documentation for the function defined in the python file ``matrix_divided(matrix, div)``.
 
 Usage
 =====
