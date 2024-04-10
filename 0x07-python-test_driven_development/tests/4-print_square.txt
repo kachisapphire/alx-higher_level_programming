@@ -53,5 +53,5 @@ at least one argument must be provided
 ::
 
 	>>> print_square()
-	Traceback (most tecent call last):
+	Traceback (most recent call last):
 	TypeError: print_square() missing 1 required positional argument: 'size'
