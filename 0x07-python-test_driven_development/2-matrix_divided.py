@@ -9,7 +9,7 @@ def matrix_divided(matrix, div):
     Return: a new matrix.
     Raises: typeerror and zerodivision error.
     """
-    if(not isinstance(matrix, list) or matrix == [] or
+    if (not isinstance(matrix, list) or matrix == [] or
             not all(isinstance(row, list) for row in matrix) or
             not all(
                 isinstance(ele, (int, float))
