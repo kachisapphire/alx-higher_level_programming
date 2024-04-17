@@ -9,6 +9,7 @@ class MyInt(int):
     def __eq__(self, value):
         """ This function reverses the function 'eq'. """
         return self.real != value
+
     def __ne__(self, value):
         """ This function reverses 'eq'. """
         return self.real == value
