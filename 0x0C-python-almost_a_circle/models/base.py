@@ -2,6 +2,7 @@
 """ this is a module containing a class base. """
 import json
 import csv
+import turtle
 
 
 class Base:
@@ -115,3 +116,38 @@ class Base:
                 return lists
         except FileNotFoundError:
             return []
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """ this opens a window and draws all the Rectangle/ squares """
+        draw = turtle.Turtle()
+        draw.screen.bgcolor("purple")
+        draw.shape("arrow")
+        for i in list_rectangles:
+            draw.showturtle()
+            draw.up()
+            draw.goto(i.x, i.y)
+            draw.down()
+            for j in range(2):
+                draw.forward(i.width)
+                draw.left(90)
+                draw.forward(i.height)
+                draw.left(90)
+            draw.hideturtle()
+        draw.color("red")
+        for k in list_squares:
+            draw.showturtle()
+            draw.up()
+            draw.goto(k.x, k.y)
+            draw.down()
+            for n in range(2):
+                draw.forward(k.width)
+                draw.left(90)
+                draw.forward(k.height)
+                draw.left(90)
+            draw.hideturtle()
+        turtle.exitonclick
+
+
+if __name__ == "__main__":
+    pass
