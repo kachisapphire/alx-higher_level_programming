@@ -17,13 +17,13 @@ class TestBase(unittest.TestCase):
     def test_threearg(self):
         b1 = Base()
         b2 = Base()
-        b3 = base()
+        b3 = Base()
         self.assertEqual(b1.id, b3.id - 2)
 
     def test_noid(self):
         b1 = Base(None)
         b2 = Base(None)
-        self.assertEqual(b1.id, b2.1d - 1)
+        self.assertEqual(b1.id, b2.id - 1)
 
     def test_uniqueid(self):
         b1 = Base()
@@ -44,7 +44,7 @@ class TestBase(unittest.TestCase):
         self.assertEqual(5, b1.id)
 
     def test_float(self):
-        self.assertequal(2.5, Base(5.5).id)
+        self.assertEqual(2.5, Base(2.5).id)
 
 if __name__ == "__main__":
     unittest.main()

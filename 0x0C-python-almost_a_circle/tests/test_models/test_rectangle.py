@@ -73,7 +73,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_setter_for_x(self):
         r = Rectangle(1, 2, 3, 4, 5)
-        r.y = 6
+        r.x = 6
         self.assertEqual(6, r.x)
 
     def test_y_getter(self):
@@ -195,7 +195,7 @@ class TestX(unittest.TestCase):
             Rectangle(9, 8, True)
 
     def test_x_negative(self):
-        with self.assertRaisesRegex(valueError, "x must be >= 0"):
+        with self.assertRaisesRegex(ValueError, "x must be >= 0"):
             Rectangle(9, 8, -2)
 
     def test_x_dict(self):
@@ -205,7 +205,7 @@ class TestX(unittest.TestCase):
 
 class TestY(unittest.TestCase):
     """ This checks errors of y. """
-    def test_none_y:
+    def test_none_y(self):
         with self.assertRaisesRegex(TypeError, "y must be an integer"):
             Rectangle(7, 9, 2, None)
 
@@ -256,5 +256,5 @@ class TestRectangle_Area_Display(unittest.TestCase):
 
     def test_one_args(self):
         r = Rectangle(2, 4, 6, 8, 9)
-        with self.assertRaisesRegex(TypeError):
+        with self.assertRaises(TypeError):
             r.area(1)
