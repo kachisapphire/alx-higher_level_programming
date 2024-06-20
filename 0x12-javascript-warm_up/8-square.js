@@ -8,7 +8,7 @@ if (args === undefined || isNaN(num)) {
   for (i = 0; i < num; i++) {
     square = '';
     for (j = 0; j < num; j++) {
-      square += 'x';
+      square += 'X';
     }
     console.log(square);
   }
