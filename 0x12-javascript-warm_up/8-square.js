@@ -9,6 +9,7 @@ if (isNaN(num)) {
     square = '';
     for (j = 0; j < num; j++) {
       square += 'x';
-    } console.log(square);
+    }
+    console.log(square);
   }
 }
