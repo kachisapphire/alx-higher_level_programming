@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const args = process.argv[2];
 const num = parseInt(args);
-if (isNaN(num)) {
+if (args === undefined || isNaN(num)) {
   console.log('Missing size');
 } else {
   let i, square, j;
